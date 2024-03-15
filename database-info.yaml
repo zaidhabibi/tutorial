@@ -1,0 +1,68 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-z
+  description: Team Z
+spec:
+  type: team
+  profile:
+    displayName: Team Z
+    email: team-z@example.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Abby&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: backstage
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: carolyn.moore
+spec:
+  profile:
+    displayName: Carolyn Moore
+    email: carolyn.moore@example.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Gizmo&backgroundColor=transparent
+  memberOf: [team-z]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: esma.berberoğlu
+spec:
+  profile:
+    displayName: Esma Berberoğlu
+    email: colette-brock@example.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Bailey&backgroundColor=transparent
+  memberOf: [team-z]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: isabella.rhodes
+spec:
+  profile:
+    displayName: Isabella Rhodes
+    email: isabella.rhodes@example.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Mimi&backgroundColor=transparent
+  memberOf: [team-z]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: derrick.carter
+spec:
+  profile:
+    displayName: Derrick Carter
+    email: derrick.carter@example.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Baby&backgroundColor=transparent
+  memberOf: [team-z]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: mattie.lambert
+spec:
+  profile:
+    displayName: Mattie Lambert
+    email: mattie.lambert@example.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Sassy&backgroundColor=transparent
+  memberOf: [team-z]
